@@ -1,12 +1,16 @@
 {
-  "name": "frontend",
+  "name": "cartel-frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Cartel Frontend Monorepo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm --filter \"./apps/*\" --parallel dev",
+    "dev:mvp": "pnpm --filter @cartel/mvp dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
 }
