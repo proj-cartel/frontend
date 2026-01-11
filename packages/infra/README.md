@@ -114,7 +114,7 @@ lsof -i :8080
 
 다른 포트로 변경:
 ```bash
-podman run -d --name cartel-nginx -p 3000:80 ...
+podman run -d --name cartel-nginx -p 8081:80 ...
 ```
 
 ### 로그 확인
